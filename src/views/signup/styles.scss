@@ -1,0 +1,43 @@
+$primary: #fe515f;
+
+.signup-form {
+    background: $primary;
+    padding: 40px 0;
+    &__items {
+        display: flex;
+        width: 60%;
+        margin: 20px auto;
+        background: rgba($color: (#fff), $alpha: .60);
+        border-radius: 20px;
+        padding: 20px 5%;
+        flex-direction: column;
+    }
+    &__categories {
+        display: flex;
+    }
+    &__category {
+        border: 3px solid black;
+        padding: 5px 10px;
+        cursor: pointer;
+        & + .signup-form__category {
+            margin-left: 20px;
+        }
+        &.selected {
+            border: 3px solid red;
+        }
+    }
+    &__location {
+        border: 3px solid black;
+        padding: 5px 10px;
+        cursor: pointer;
+        & + .signup-form__location {
+            margin-top: 20px;
+            
+        }
+        &.selected {
+            border: 3px solid red;
+        }
+    }
+    
+    
+}

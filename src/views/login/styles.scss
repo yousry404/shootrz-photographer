@@ -1,0 +1,41 @@
+
+// .login-page {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding-top: 100px;
+//     &__header{
+//         text-align: center;
+//     }
+
+//     &__form {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     &__email, &__password {
+//         width: 50%;
+//     }
+//     &__submit {
+//         color: #fff;
+//         background: #fe515f;
+//         border: 0;
+//         padding: 5px 10px;
+//         border-radius: 5px;
+//     }
+// }
+
+.login-page {
+    background: #f3f3f3;
+    padding: 40px 0;
+    &__form {
+        display: flex;
+        width: 70%;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    
+    
+}
