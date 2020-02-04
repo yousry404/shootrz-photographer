@@ -11,19 +11,28 @@ $primary: #fe515f;
         border-radius: 20px;
         padding: 20px 5%;
         flex-direction: column;
+        @media (max-width: 768px) {
+            width: 86%;
+            
+        }
     }
-    &__categories {
-        display: flex;
-    }
+  
     &__category {
         border: 3px solid black;
-        padding: 5px 10px;
+        padding: 2px 6px;
+        text-align: center;
         cursor: pointer;
         & + .signup-form__category {
             margin-left: 20px;
+            
+                
         }
+        
         &.selected {
             border: 3px solid red;
+        }
+        @media (max-width: 768px) {
+            margin: 5px 20px;
         }
     }
     &__location {
@@ -41,3 +50,22 @@ $primary: #fe515f;
     
     
 }
+
+@media (max-width: 768px) {
+    .navbar-brand {
+      width: 60%;
+      img {
+        width: 100%;
+      }
+    }
+    .navbar-nav {
+      margin: 0;
+    }
+    .nav-item {
+      text-align: center;
+      margin-left: 0 !important;
+    }
+    .dropdown-item {
+      text-align: center;
+    }
+  }

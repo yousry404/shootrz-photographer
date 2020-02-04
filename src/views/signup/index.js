@@ -361,12 +361,13 @@ function Signup({
         </FormControl>
         <InputLabel className="mt-3" required>Choose Categories you work in</InputLabel>
         <FormControl error={false}>
-          <div className="signup-form__categories">
+          <div className="signup-form__categories container-fluid">
+            <div className="row">
             {categories.map(category =>
               selectedCategories.find(cat => cat.id === category.id) ? (
                 <div
                   key={category.id}
-                  className="signup-form__category selected"
+                  className="signup-form__category selected col-sm-2"
                   onClick={() => handleRemoveCategory(category)}
                 >
                   {category.name}
@@ -374,13 +375,15 @@ function Signup({
               ) : (
                 <div
                   key={category.id}
-                  className="signup-form__category"
+                  className="signup-form__category col-sm-2"
                   onClick={() => handleAddCategory(category)}
                 >
                   {category.name}
                 </div>
               )
             )}
+            </div>
+           
           </div>
           <div className="signup-form__selected-categories">
             <p>
