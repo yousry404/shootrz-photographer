@@ -367,18 +367,24 @@ function Signup({
               selectedCategories.find(cat => cat.id === category.id) ? (
                 <div
                   key={category.id}
-                  className="signup-form__category selected col-sm-2"
+                  className="col-sm-2 signup-form__category selected "
                   onClick={() => handleRemoveCategory(category)}
                 >
+                  <div className="category-inner">
                   {category.name}
+
+                  </div>
                 </div>
               ) : (
                 <div
                   key={category.id}
-                  className="signup-form__category col-sm-2"
+                  className="col-sm-2 signup-form__category "
                   onClick={() => handleAddCategory(category)}
                 >
+                  <div className="category-inner">
                   {category.name}
+
+                  </div>
                 </div>
               )
             )}
