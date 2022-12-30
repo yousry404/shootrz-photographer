@@ -11,7 +11,7 @@
     "@material-ui/pickers": "^3.2.8",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.18.8",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-netlify": "^2.1.31",
